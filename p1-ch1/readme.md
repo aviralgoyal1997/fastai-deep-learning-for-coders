@@ -5,3 +5,9 @@ In lesson1.ipynb we learnt how to do transfer learning on a pretraned resnet mod
 You will get many module not found error so just download those python packages and you will be fine.
 
 Download link of dog and cat data : <href>http://files.fast.ai/data/dogscats.zip
+
+<br>So steps performed in project:</br>
+<br>1.Copy data into path and then transform it by tfms and then set it for our model,then train last lyer of our model on this data with precompute=True means using some of previous activations.
+<br>2.find good learning rate by lr_find()
+<br>3.to improve model do data augmentation and perform 1 and then for learning rate use sgdr
+<br>unfreeze all layers so we can retune them.
